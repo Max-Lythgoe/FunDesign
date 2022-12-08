@@ -53,6 +53,68 @@ section img
     top: -500px;
 }
 
-.filler {
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 10000;
+    color: white;
+    padding: 1rem;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    background-color: rgba(0, 90, 180, 0.5);
+}
+
+.featured {
+    background-color: lightskyblue;
+    padding: 2rem;
+}
+
+.title {
+    color: black;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.card {
+    width: 20rem;
+    border-radius: 11px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    margin: 1rem;
+    transition: ease-in-out .5s
+}
+
+.card-link {
+    color: black;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: white;
+    transition: ease-in-out .5s;
+}
+
+.subtitle {
+    font-size: large;
+}
+
+.fd-icn {
+    height: 4rem;
+    border-radius: 7px;
+}
+
+.scroll-area {
     height: 100vh;
 }
