@@ -64,7 +64,7 @@ section img
     z-index: 10000;
     color: white;
     padding: 1rem;
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    /* text-shadow: rgb(0, 0, 0) 1px 0 10px; */
     background-color: rgba(0, 90, 180, 0.5);
 }
 
@@ -117,4 +117,55 @@ section img
 
 .scroll-area {
     height: 100vh;
+}
+
+#arch2 {
+    margin-left: -200px;
+    z-index: 3;
+}
+
+#arch1 {
+    margin-left: -200px;
+    z-index: 1;
+}
+
+#text2 {
+    z-index: 2;
+    color: white;
+    position: absolute;
+}
+
+.text2 {
+    z-index: 2;
+    color: white;
+    font-size: 5em;
+}
+
+.button {
+    z-index: 3;
+    background-color: transparent;
+    border: solid 3px white;
+    padding: 1rem;
+    font-size: 2em;
+    color: white;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    mix-blend-mode: screen;
+  }
+
+@media screen and (min-width: 1440px) {
+    .cards {
+        margin-left: 25%;
+        margin-right: 25%;;
+        justify-content: center;
+    }
+
+    .title {
+        text-align: center;
+    }
 }
