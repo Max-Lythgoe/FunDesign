@@ -69,24 +69,22 @@ section img
 }
 
 .featured {
-    background-color: lightskyblue;
+    background: linear-gradient(0deg, rgb(45, 65, 107) 0%, rgb(71, 160, 255) 100%);
     padding: 2rem;
 }
 
 .title {
-    color: black;
+    color: white;
 }
 
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: yellow; */
     justify-items: center;
-    align-items: center;
 }
 
 .card {
-    width: 20rem;
-    border-radius: 11px;
     background-color: rgb(235, 235, 235);
     display: flex;
     flex-direction: row;
@@ -94,6 +92,11 @@ section img
     gap: 1rem;
     margin: 1rem;
     transition: ease-in-out .5s
+}
+
+.small-card {
+    width: 20rem;
+    border-radius: 11px;
 }
 
 .card-link {
@@ -104,6 +107,7 @@ section img
 .card:hover {
     background-color: white;
     transition: ease-in-out .5s;
+    scale: 1.05;
 }
 
 .subtitle {
@@ -156,13 +160,58 @@ section img
     color: #000;
     cursor: pointer;
     mix-blend-mode: screen;
-  }
+}
+
+.med-img {
+    object-fit: cover;
+    height: 15em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.big-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    height: 24em;
+}
+
+.gray-txt {
+    color: rgb(163, 163, 163);
+    font-size: small;
+}
+
+.small-txt {
+    color: black;
+    font-size: .9em;
+}
+
+.mre-btn {
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 50%;
+    padding: 1em;
+    margin-left: 25%;
+    background-color: transparent;
+    border: solid 3px white;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+}
+
+.mre-btn:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    mix-blend-mode: screen;
+}
 
 @media screen and (min-width: 1440px) {
     .cards {
         margin-left: 25%;
-        margin-right: 25%;;
-        justify-content: center;
+        margin-right: 25%;
     }
 
     .title {
