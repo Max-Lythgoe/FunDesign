@@ -153,6 +153,7 @@ section img
     font-size: 2em;
     color: white;
     border-radius: 20px;
+    transition: ease-in-out .3s;
 }
 
 .button:hover {
@@ -160,6 +161,7 @@ section img
     color: #000;
     cursor: pointer;
     mix-blend-mode: screen;
+    transition: ease-in-out .3s;
 }
 
 .med-img {
@@ -199,6 +201,7 @@ section img
     padding: 1rem;
     color: white;
     font-weight: 700;
+    transition: ease-in-out .3s;
 }
 
 .mre-btn:hover {
@@ -206,6 +209,7 @@ section img
     color: #000;
     cursor: pointer;
     mix-blend-mode: screen;
+    transition: ease-in-out .3s;
 }
 
 @media screen and (min-width: 1440px) {
