@@ -137,13 +137,12 @@ section img
 }
 
 #text2 {
-    z-index: 2;
+    z-index: 15;
     color: white;
     position: absolute;
 }
 
 .text2 {
-    z-index: 2;
     color: white;
     font-size: 5em;
 }
@@ -303,5 +302,11 @@ hr {
 
     .title {
         text-align: center;
+    }
+}
+
+@media (min-width:2560px) {
+    #text2 {
+        z-index: 2;
     }
 }
